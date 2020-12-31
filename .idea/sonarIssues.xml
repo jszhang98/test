@@ -123,6 +123,31 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/example/factory/pizzaaf/CheesePizza.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/example/factory/pizzaaf/ChicagoPizzaIngredientFactory.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/example/factory/pizzaaf/NYPizzaStore.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/example/factory/pizzaaf/PepperoniPizza.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/example/factory/pizzaaf/Pizza.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/production/test/factory/ChicagoPizzaStore.java">
           <value>
             <set />
@@ -144,6 +169,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/production/test/factory/Pizza.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/production/test/factory/PizzaIngredientFactory.java">
           <value>
             <set />
           </value>
