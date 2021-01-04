@@ -23,11 +23,21 @@ public class WeatherData implements Subject {
 			observers.remove(i);
 		}
 	}
-	
+
+	@Override
+	public void registerObserver(production.test.example.observer.weather.Observer o) {
+
+	}
+
+	@Override
+	public void removeObserver(production.test.example.observer.weather.Observer o) {
+
+	}
+
 	public void notifyObservers() {
 		for (int i = 0; i < observers.size(); i++) {
 			java.util.Observer observer = (Observer)observers.get(i);
-			observer.update(temperature, humidity, pressure);
+			//.update(temperature, humidity, pressure);
 		}
 	}
 	
