@@ -11,4 +11,9 @@ public class Cat extends Animal {
     void makeSound() {
 
     }
+
+    @Override
+    void eat() {
+        System.out.println("cat ates.");
+    }
 }
