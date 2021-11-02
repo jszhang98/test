@@ -1,7 +1,6 @@
 package production.test.example.observer.weather;
 
 import java.util.*;
-import java.util.Observer;
 
 public class ForecastDisplay implements Observer, DisplayElement {
 	private float currentPressure = 29.92f;  
@@ -30,8 +29,4 @@ public class ForecastDisplay implements Observer, DisplayElement {
 		}
 	}
 
-	@Override
-	public void update(Observable o, Object arg) {
-
-	}
 }
