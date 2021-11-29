@@ -15,7 +15,7 @@ class BasicShapesEx extends JFrame {
         add(new Surface());
 
         setTitle("Basic shapes");
-        setSize(1000, 1000);
+        setSize(3000, 3000);
         setLocationRelativeTo(null);
         setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
     }

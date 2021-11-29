@@ -6,6 +6,7 @@ import javax.sound.sampled.Line;
 import javax.swing.*;
 import java.awt.*;
 import java.awt.geom.Ellipse2D;
+import java.util.ArrayList;
 
 class Surface extends JPanel {
     private int currentX = 10;
@@ -37,21 +38,29 @@ class Surface extends JPanel {
 
         //g2d.drawLine(20, 100, 120, 100);
 
-        drawWieldShape(g,900,2);
+        drawWieldShape(g,900,4);
         //Pen myPen = new Pen(System.Drawing.Color.Red, 5);
         //g2d.getPaint()
         //Shape aa = new Circle();
     }
 
-    public void drawWieldShape(Graphics g, double size, int count){
-        for (int i = 0; i < Math.pow(4,count-1); i++) {
-            double initAngle = 60*i;
-            drawLineByLength(g, 0+angle+initAngle,size/Math.pow(3,count));
-            drawLineByLength(g, 60+angle+initAngle,size/Math.pow(3,count));
-            drawLineByLength(g, -120+angle+initAngle,size/Math.pow(3,count));
-            drawLineByLength(g, 60+angle+initAngle,size/Math.pow(3,count));
-        }
+    public void drawWieldShape(Graphics g, double size, int n){
 
+        if (n==0){
+            drawLineByLength(g, this.angle,size);
+        }else{
+            ArrayList<Double> list = new ArrayList<Double>();
+            list.add((double) 0);
+            list.add(60.0);
+            list.add((double) -120);
+            list.add(60.0);
+            for  (Double a:list) {
+                //drawLineByLength(g, a ,0);
+                this.angle = a+this.angle;
+                drawWieldShape( g, size/3,  n-1);
+            }
+           
+        }
     }
 
     public void drawLineByLength(Graphics g, double angle, double length) {
