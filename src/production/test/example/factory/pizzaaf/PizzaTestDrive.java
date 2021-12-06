@@ -5,7 +5,10 @@ public class PizzaTestDrive {
 	public static void main(String[] args) {
 		PizzaStore nyStore = new NYPizzaStore();
 		PizzaStore chicagoStore = new ChicagoPizzaStore();
- 
+
+		orderPizza(nyStore,"cheese");
+
+
 		Pizza pizza = nyStore.orderPizza("cheese");
 		System.out.println("Ethan ordered a " + pizza + "\n");
  
@@ -29,5 +32,11 @@ public class PizzaTestDrive {
  
 		pizza = chicagoStore.orderPizza("veggie");
 		System.out.println("Joel ordered a " + pizza + "\n");
+	}
+	public static Pizza orderPizza(PizzaStore ps, String type){
+
+		return ps.orderPizza(type);
+
+
 	}
 }
