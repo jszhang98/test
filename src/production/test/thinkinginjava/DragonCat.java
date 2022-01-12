@@ -1,6 +1,9 @@
 package production.test.thinkinginjava;
 
+import java.util.HashMap;
+
 public class DragonCat extends Cat{
+
     public DragonCat(){
         System.out.println("this is the constructor of DragonCat.");
     }
@@ -10,6 +13,7 @@ public class DragonCat extends Cat{
     }
     public static void main(String[] args){
         DragonCat dragonCat = new DragonCat();
+        HashMap<DragonCat,DragonCat> a =new HashMap<DragonCat,DragonCat>();
         dragonCat.testFunction();
     }
 
